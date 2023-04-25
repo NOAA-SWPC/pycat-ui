@@ -20,6 +20,10 @@ pyCAT is a reimplementation and reimagining of CAT.  It will reproduce the capab
 
 Stay tuned for more details.
 
+## Initializing the UI WITHOUT the backend
+
+Without the backend, either a local LAMP stack or a tool like Visual Studio Code is required. In VS Code, the user must install the Live Server extension. Then, open the cat-proto.html file, right click, and select "Open with live server" from within the menu that pops up. This will create a local server that then displays the pycat UI in the user's browser. In order to properly display the cone with the CME images behind it, the user will need a directory with PNG data images called "data." If you would like to rename the directory, change the directory name in the .gitignore file as well. Within this directory, the user will need the CME images in .png format AND the images.json file from the repository. If the images.json file does not accurately reflect the names of the files in the /data directory, the user can change images.json file names (replace "/data/image0.png" with "/data/{imageName.png}"). Once the UI is eventually connected to the backend, the images.json and /data pieces will be irrelevant.
+
 ---
 
 > G. Millward, D. Biesecker, V. Pizzo, and C. A. de Koning 2013, "An Operational Toole for the Analysis of Coronagraph Images: Determining CME Parameters for Input into the WSA-Enlil Heliospheric Model", Space Weather, 11, 57-68, [doi:10.1002/swe.20024](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/swe.20024)
