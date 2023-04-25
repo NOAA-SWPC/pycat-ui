@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <style>
+        #flexContainer {
+            display:flex;
+        }
+        #mainContainer {
+            flex: 1;
+            justify-content:center;
+        }
+        #slideContainer {
+            flex: 1;
+            margin-left:5em;
+            justify-content:center;
+        }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="flexContainer">
+    <div id="mainContainer">
+        <svg>
+            <defs>
+                    <pattern id="img1" patternUnits="userSpaceOnUse" width="512" height="512">
+                      <image id="patternImg" href="" x="0" y="0" width="512" height="512" />
+                    </pattern>
+                </defs>
+        </svg>
+        
+    </div>
+    <div id="slideContainer">
+        <label> Slide through images
+            <input type="range" min="0" max="9" value="0" class="slider lemInput" id="slideRange">
+            <p id="imgSlider"></p>
+        </label>
+        <br>
+        <label> Latitude (degrees)
+            <input type="range" min="-60.0" max="60.0" value="10.0" class="slider lemInput" id="latRange">
+            <p id="latP"></p>
+        </label>
+        <br>
+        <label> Longitude (degrees)
+            <input type="range" min="-90.0" max="90.0" value="50.0" class="slider lemInput" id="lonRange">
+            <p id="lonP"></p>
+        </label>
+        <br>
+        <label> Length (a)
+            <input type="range" min="0.0" max="500.0" value="50.0" class="slider lemInput" id="aRange">
+            <p id="aP"></p>
+        </label>
+        <br>
+        <label> Cone Angle Psi (degrees)
+            <input type="range" min="0.0" max="90.0" value="20.0" class="slider lemInput" id="psiRange">
+            <p id="psiP"></p>
+        </label>
+    </div>
+    </div>
+    
+</body>
+
+<script src="cat-proto.js" charset="utf-8"></script>
+</html>
